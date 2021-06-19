@@ -3,11 +3,23 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Provider } from 'react-redux';
+import store from './store';
+import { onSignIn } from './actions';
+import {CookiesProvider} from 'react-cookie';
+
+store.dispatch(onSignIn());
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <BrowserRouter>
+    <Provider store={store}>
+      <CookiesProvider>
+      <App />
+      </CookiesProvider>
+    </Provider>
+  </BrowserRouter>,
   document.getElementById('root')
 );
 

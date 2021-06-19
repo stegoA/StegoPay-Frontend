@@ -1,0 +1,29 @@
+.downloadStegoPayText {
+    margin-top: 50px;
+    width: 1110px;
+    height: 84px;
+    left: 718px;
+    top: 140px;
+    font-size: 55px;
+    line-height: 84px;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-family: 'Roboto', sans-serif;
+    }
+
+.illustration {
+    margin-top: 65px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;   
+    width: 50%;
+}
+
+.googlePlayBadge {
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;   
+    width: 25%;
+}
